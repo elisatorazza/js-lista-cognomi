@@ -9,8 +9,12 @@ var listaCognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
 var cognomeUtente = prompt("Inserisci il cognome");
 // 3. Inserirlo in un array con altri cognomi
 listaCognomi.push(cognomeUtente);
-// 4. Stampare la lista ordinata alfabeticamente
+// 4. Ordinare alfabeticamente la listaCognomi
 listaCognomi.sort();
-console.log (listaCognomi);
-console.log(listaCognomi.indexOf(cognomeUtente, 1));
 // Scrivere la posizione "umana" della lista in cui il nuovo utente si trova
+for (i = 0; i < listaCognomi.length; i++) {
+var lista = document.getElementById("cognomi").innerHTML;
+lista = lista + "<li>" + listaCognomi[i] + "</li>";
+document.getElementById("cognomi").innerHTML = lista;
+}
+console.log(listaCognomi.indexOf(cognomeUtente) + 1);
