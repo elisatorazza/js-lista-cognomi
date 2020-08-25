@@ -12,5 +12,5 @@ listaCognomi.push(cognomeUtente);
 // 4. Stampare la lista ordinata alfabeticamente
 listaCognomi.sort();
 console.log (listaCognomi);
-console.log(listaCognomi.indexOf(cognomeUtente,1));
+console.log(listaCognomi.indexOf(cognomeUtente, 1));
 // Scrivere la posizione "umana" della lista in cui il nuovo utente si trova
